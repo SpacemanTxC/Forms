@@ -60,6 +60,28 @@
              at laborum debitis sequi libero odio? Vitae, itaque.</textarea>
         <button type="submit">Submit </button>
     </form>
-
+<!-- Actions are where to store data -->
+<!-- Will go to reddit -->
+    <form action="https://www.reddit.com/search" method="get">
+        <input type="text" name="q">
+        <br>
+        Sort By:
+        <select name="sort">
+            <option value="top">Top</option>
+            <option value="new">New</option>
+            <option value="comments">Comments</option>
+        </select>
+        <br>
+        Pick File:
+        <input type="file">
+        <br>
+        <button type="submit">Search!</button>
+    </form>
+    <!-- This won't work because it doesnt have a server to send to  -->
+    <form method="post" enctype="multipart/form-data">
+		Choose file:
+		<input type="file" name="my-file">
+		<button type="submit">Upload File</button>
+    </form>
 </body>
 </html>
